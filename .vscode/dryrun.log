@@ -1,0 +1,20 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/hamchur/Desktop/ft_printf'
+cc -Wall -Wextra -Werror   -c -o ft_printf.o ft_printf.c
+cc -Wall -Wextra -Werror   -c -o ft_check.o ft_check.c
+cc -Wall -Wextra -Werror   -c -o ft_print_c.o ft_print_c.c
+cc -Wall -Wextra -Werror   -c -o ft_print_percent.o ft_print_percent.c
+cc -Wall -Wextra -Werror   -c -o ft_parser.o ft_parser.c
+cc -Wall -Wextra -Werror   -c -o ft_print_s.o ft_print_s.c
+cc -Wall -Wextra -Werror   -c -o ft_print_i.o ft_print_i.c
+cc -Wall -Wextra -Werror   -c -o ft_print_ui.o ft_print_ui.c
+cc -Wall -Wextra -Werror   -c -o ft_print_hexa.o ft_print_hexa.c
+ 
+cc -Wall -Wextra -Werror   -c -o ft_print_p.o ft_print_p.c
+cc -Wall -Wextra -Werror   -c -o ft_str_tolower.o ft_str_tolower.c
+cc -Wall -Wextra -Werror   -c -o ft_putchar_fd.o ft_putchar_fd.c
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_check.c ft_print_c.c ft_print_percent.c ft_parser.c ft_print_s.c ft_print_i.c ft_print_ui.c ft_print_hexa.c ft_print_p.c ft_str_tolower.c ft_putchar_fd.c 
+ar rcs libftprintf.a ft_printf.o ft_check.o ft_print_c.o ft_print_percent.o ft_parser.o ft_print_s.o ft_print_i.o ft_print_ui.o ft_print_hexa.o ft_print_p.o ft_str_tolower.o ft_putchar_fd.o
+ranlib libftprintf.a
+make: Leaving directory `/Users/hamchur/Desktop/ft_printf'
+ 
